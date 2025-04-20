@@ -15,7 +15,7 @@ This repository contains all my C++ programming lab exercises and solutions.<br>
 <p>Each lab folder contains a separate `README.md` describing the problems covered.</p>
 <br>
 <p>How to run?</p>
-<p>Compile any file using g++:
-```bash
-g++ program1.cpp -o program1
+<p>Compile any file using g++:<br>
+```bash<br>
+g++ program1.cpp -o program1<br>
 ./program1</p>
