@@ -46,5 +46,6 @@ This repository contains beginner-friendly C++ programs written for practice and
     cd your-repo-name
 
 3.**Compile and run**
-    g++ filename.cpp -o output
-    ./output
+   ```bash 
+   g++ filename.cpp -o output
+   ```bash ./output
