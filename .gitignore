@@ -1,0 +1,27 @@
+# Ignore object files and compiled binaries
+*.o
+*.obj
+*.exe
+*.out
+*.class
+*.dll
+*.so
+*.dSYM/
+*.log
+
+# Ignore backup/temporary/editor files
+*~
+*.swp
+*.tmp
+.DS_Store
+
+# Optional: Ignore build folders
+/build/
+/bin/
+/Debug/
+/Release/
+
+# Ignore generated files
+*.a
+*.lib
+*.pch
