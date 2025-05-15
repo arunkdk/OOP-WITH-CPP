@@ -28,7 +28,7 @@ int main()
     cin.getline(p.gender,10);
     cout<<"Nature of illness:";
     cin.getline(p.illness,30);
-    cin.get();          // Waits for Enter key before closing the terminal
+    cin.get();        // Waits for Enter key before closing the terminal
     cout<<"Details of patient:"<<endl;
     cout<<"Name:"<<p.name<<endl;
     cout<<"Age:"<<p.age<<endl;
