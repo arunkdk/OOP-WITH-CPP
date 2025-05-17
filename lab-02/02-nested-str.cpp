@@ -43,7 +43,7 @@ int main()
     cin.getline(p.gender,10);
     cout<<"Nature of illness:";
     cin.getline(p.illness,30);
-    cout<<"Details of patient:"<<endl;
+    cout<<"\nRDetails of patient:"<<endl;
     cout<<"Name:"<<p.name<<endl;
     cout<<"DOB:"<<p.d.yy<<"/"<<p.d.mm<<"/"<<p.d.dd<<endl;
     cout<<"Age:"<<p.age<<endl;
