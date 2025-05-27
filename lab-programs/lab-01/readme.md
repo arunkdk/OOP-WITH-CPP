@@ -1,6 +1,6 @@
 
 
-    <h1>Programs covered in lab-01:</h1>
+ <h1>Programs covered in lab-01:</h1>
     <ol>
         <li>Write a program to display “Welcome to Everest Engineering College” in C++.</li>
         <li>WAP to display the following output.<br>
