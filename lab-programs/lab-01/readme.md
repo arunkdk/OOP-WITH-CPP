@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Programs covered in lab-01</title>
-</head>
-<body>
+
+
     <h1>Programs covered in lab-01:</h1>
     <ol>
         <li>Write a program to display “Welcome to Everest Engineering College” in C++.</li>
@@ -26,5 +22,4 @@ I Love my country.
             </ul>
         </li>
     </ol>
-</body>
-</html>
+
