@@ -15,10 +15,6 @@ class A
         cout<<"Enter the value of x:\n";
         cin>>x;
     }
-    void display()
-    {
-        cout<<"Entered value is "<<x<<endl;
-    }
     friend void sum( A a, B b );   
      // here we are passing two objects to friend function as it use two data from different class
 };
@@ -31,10 +27,6 @@ class B
     {
         cout<<"Enter the value y:\n";
         cin>>y;
-    }
-    void display()
-    {
-        cout<<"Entered value is  "<<y<<endl;
     }
     friend void sum( A a, B b );   
 };
@@ -49,8 +41,6 @@ int main()
     B b1;
     a1.getData();
     b1.getData();
-    a1.display();
-    b1.display();
     sum( a1, b1 );
     return 0;
 }

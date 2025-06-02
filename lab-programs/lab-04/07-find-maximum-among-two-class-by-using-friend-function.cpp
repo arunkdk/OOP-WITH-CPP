@@ -1,14 +1,14 @@
 /*
 Create classes called class1 and class2 with each of having one private member. Add member function to set 
 a value(say setvalue()) one each class. Add one more function max() that is friendly to both classes. max()
- function should compare two private member of two classes and show maximum among them. Create one-one object
-  of each class and then set a value on them. Display the maximum number among them.
+function should compare two private member of two classes and show maximum among them. Create one-one object
+of each class and then set a value on them. Display the maximum number among them.
 */
 
 #include<iostream>
 using namespace std;
-class two;
-class one
+class class2;
+class class1
 {
     private:
     int x;
@@ -18,9 +18,9 @@ class one
         cout<<"Enter first value:";
         cin>>x;
     }
-    friend void compare( one a, two b );
+    friend void max( class1 a, class2 b );
 };
-class two
+class class2
 {
     private:
     int y;
@@ -30,9 +30,9 @@ class two
         cout<<"Enter second value:";
         cin>>y;
     }
-    friend void compare( one a, two b );
+    friend void max( class1 a, class2 b );
 };
-void compare( one a, two b )
+ void max( class1 a, class2 b )
 {
     if( a.x > b.y )
     {
@@ -49,10 +49,10 @@ void compare( one a, two b )
 }
 int main()
 {
-    one p;
-    two q;
+    class1 p;
+    class2 q;
     p.setData();
     q.setData();
-    compare( p, q );
+    max( p, q );
     return 0;
 }

@@ -16,10 +16,6 @@ class A
         cout<<"Enter the value of x:\n";
         cin>>x;
     }
-    void display()
-    {
-        cout<<"Entered value is "<<x<<endl;
-    }
     friend void sum( A a, B b, C c );   
      // here we are passing three objects to friend function as it use three data from different class
 };
@@ -33,10 +29,6 @@ class B
         cout<<"Enter the value y:\n";
         cin>>y;
     }
-    void display()
-    {
-        cout<<"Entered value is  "<<y<<endl;
-    }
     friend void sum( A a, B b, C c );   
 };
 class C
@@ -48,10 +40,6 @@ class C
     {
         cout<<"Enter the value of z:\n";
         cin>>z;
-    }
-    void display()
-    {
-        cout<<"Entered value is "<<z<<endl;
     }
     friend void sum( A a, B b, C c );   
 };
@@ -68,9 +56,6 @@ int main()
     a1.getData();
     b1.getData();
     c1.getData();
-    a1.display();
-    b1.display();
-    c1.display();
     sum( a1, b1, c1 );
     return 0;
 }

@@ -1,5 +1,6 @@
 /*
-Addition of two times with data members hours, minutes and seconds, function call by one object passing second object as function argument and return third object adding two objects.
+Addition of two times with data members hours, minutes and seconds, function call by one object passing
+ second object as function argument and return third object adding two objects.
 */
 
 #include<iostream>
