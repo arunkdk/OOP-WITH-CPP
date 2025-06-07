@@ -22,22 +22,19 @@ class mountain {
     mountain() {            // This is for the object m3 which is object for mountain with larger height
 
     }
-    void cmpHeight(mountain a, mountain b) {    // constructor to compare heights
+    void cmpHeight(mountain a, mountain b) {    //  function to compare heights
         if(a.height < b.height) {
-            strcpy(name, b.name);
-            strcpy(location, b.location);
-            height = b.height;
+            b.DispInf();
         }
         else if(a.height > b.height) {
-             strcpy(name, a.name);
-            strcpy(location, a.location);
-            height = a.height;
+
+            a.DispInf();
         }
         else {
             cout<<"Both mountains have equal height.";
         }
     }
-    void display() {                            // constructor to display inforamtion of mountain which has larger height
+    void DispInf() {                // constructor to display inforamtion of mountain which has larger height
         cout<<"Name:"<<name<<endl;
         cout<<"Locatin:"<<location<<endl;
         cout<<"Height in meter:"<<height<<endl;
@@ -63,9 +60,8 @@ int main() {
     mountain m1(name1, h1, location1);
     mountain m2(name2, h2, location2);
     mountain m3;
-    m3.cmpHeight(m1, m2);
     cout<<"Mountain with larger height:\n";
-    m3.display();
+    m3.cmpHeight(m1, m2);
     return 0;
 
 }

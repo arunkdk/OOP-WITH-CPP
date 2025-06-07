@@ -11,12 +11,12 @@ class Time {
     private:
     int hr, min, sec;
     public:
-    Time(int h, int m, int s) {
+    Time(int h, int m, int s) {     // parameterized constructor
         hr = h; 
         min = m;
         sec = s;
     }
-    Time() {
+    Time() {            //default constructor
 
     }
     void addTime(Time t1, Time t2) {
@@ -39,9 +39,12 @@ int main() {
     Time t1(hr1, min1, sec1);       // calls parameterized constructor
     Time t2(hr2, min2, sec2);       // calls parameterized constructor
     Time t3;            // it calls defalut consturctor
+    cout<<"First time:\n";
     t1.display();
+    cout<<"Second time:\n";
     t2.display();
     t3.addTime(t1, t2);
+    cout<<"Sum of times:\n";
     t3.display();
     return 0;
 }
