@@ -17,7 +17,9 @@ class Time {
         sec = s;
     }
     Time() {            //default constructor
-
+        hr = 0;         // initializing zero if not, garbage value will be stored
+        min = 0;
+        sec = 0;
     }
     void addTime(Time t1, Time t2) {
         sec = t1.sec + t2.sec;

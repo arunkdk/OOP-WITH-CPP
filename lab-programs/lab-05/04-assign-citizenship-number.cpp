@@ -36,15 +36,16 @@ int main() {
     cin>>address;
     cout<<"Age:\n";
     cin>>age;
-    cout<<"The information of person is:\n";
     if(age >16) {
     cout<<"Citizenship Number:\n";
     cin>>citizenshipNo;
     person p1(name, age, address, citizenshipNo);
+    cout<<"The information of person is:\n";
     p1.display();
     }
     else {
         person p1(name, age, address, 0);
+        cout<<"The information of person is:\n";
         p1.display();
     }
     return 0;
