@@ -1,22 +1,31 @@
 /*
 WAP in C++ to calculate simple interest from given principal, time and rate. Set the
-rate to 15 % as default argument when rate is
+rate to 15 % as default argument when rate is not provided and also implement the
+concept of dynamic initialization of object.
 */
 
 #include<iostream>
 using namespace std;
 class simpleInterest {
     private:
-    float p, t, r;
+    float *p, *t, *r;
     public:
     simpleInterest(float principal, float time, float rate = 15) {
-        p = principal;
-        t = time;
-        r = rate;
+        p = new float;
+        t = new float;
+        r = new float;
+        *p = principal;
+        *t = time;
+        *r = rate;
     }
     void display() {
-        float si = (p*t*r)/100;
+        float si = (*p * *t * *r)/100;
         cout<<"Simple Interest: "<<si<<endl;
+    }
+    ~simpleInterest() {
+        delete[] p;
+        delete[] t;
+        delete[] r;
     }
 };
 int main() {

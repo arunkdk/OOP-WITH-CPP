@@ -23,7 +23,8 @@ class complex {
     ~complex() {                // don't forget to use destructor after dynamic constructor
         delete real;
         delete imag;
-    }    void addComplex(complex &a, complex &b) {  //pass by reference so as not to create duplicate objcet
+    }
+    void addComplex(complex &a, complex &b) {  //pass by reference so as not to create duplicate objcet
         *real = *a.real + *b.real;
         *imag = *a.imag + *b.imag;
     }
