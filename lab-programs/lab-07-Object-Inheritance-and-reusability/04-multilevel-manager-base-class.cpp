@@ -16,9 +16,6 @@ class Person {
         cout<<"Enter name and age of person:"<<endl;
         cin>>name>>age;
     }
-    void showPerson() {
-        cout<<"Name: "<<name<<endl<<"Age: "<<age<<endl;
-    }
 };
 class Employee: public Person {
     protected:
@@ -27,9 +24,6 @@ class Employee: public Person {
     void getEmployee() {
         cout<<"Enter employee id: "<<endl;
         cin>>emp_id;
-    }
-    void showEmployee() {
-        cout<<"Employee id: "<<emp_id<<endl;
     }
 };
 class Manager: public Employee {
@@ -41,7 +35,9 @@ class Manager: public Employee {
         cin>>department;
     }
     void showManager() {
-        cout<<"Department: "<<department<<endl;
+        cout<<"Student name: "<<name<<endl<<"Student age: "<<age<<endl;
+        cout<<"Employee id: "<<emp_id<<endl;
+        cout<<"Manger department: "<<department<<endl;
     }
 };
 int main() {
@@ -50,9 +46,7 @@ int main() {
     m.getPerson();
     m.getEmployee();
     m.getManager();
-    cout<<"Displaying the information of person: "<<endl;
-    m.showPerson();
-    m.showEmployee();
+    cout<<"Displaying the information: "<<endl;
     m.showManager();
     return 0;
 }
