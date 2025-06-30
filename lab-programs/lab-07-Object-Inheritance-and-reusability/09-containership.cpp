@@ -2,15 +2,15 @@
 Write a program to concatenate two strings using the concept of containership.
 */
 
-#include<string.h>
 #include<iostream>
+#include<string.h>
 using namespace std;
 
 class first
 {
     char name[20];
-    public:
-    void setn(const char n[])
+public:
+    void setn(char n[])
     {
         strcpy(name, n);
     }
@@ -23,8 +23,8 @@ class first
 class second
 {
     char address[20];
-    public:
-    void seta(char const a[])
+public:
+    void seta(char a[])
     {
         strcpy(address, a);
     }
@@ -40,7 +40,7 @@ private:
     first f;
     second s;
 public:
-    void getinfo(const char n[], const char a[])
+    void getinfo(char n[], char a[])
     {
         f.setn(n);
         s.seta(a);
@@ -49,7 +49,7 @@ public:
     void join()
     {
         strcat(f.getn(), s.geta());
-        cout << "name+address:" << f.getn()<<endl;
+        cout << "name+address: " << f.getn()<<endl;
     }
 };
 

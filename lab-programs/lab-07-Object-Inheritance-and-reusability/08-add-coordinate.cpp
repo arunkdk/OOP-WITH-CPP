@@ -33,7 +33,9 @@ class Derived: public Base {
     friend void display(Base d);
 };
 void display(Base d) {
-    cout<<"x: "<<d.x<<endl<<"y: "<<d.y<<endl<<"z: "<<d.z<<endl;
+    cout<<"First vector (v1): "<<d.x1<<"i + "<<d.y1<<"j + "<<d.z1<<"k"<<endl;
+    cout<<"Second vector (v1): "<<d.x2<<"i + "<<d.y2<<"j + "<<d.z2<<"k"<<endl;
+    cout<<"Addition of vectors (v): "<<d.x<<"i + "<<d.y<<"j + "<<d.z<<"k"<<endl;
 }
 int main() {
     Derived d;
