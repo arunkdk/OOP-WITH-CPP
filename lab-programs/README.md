@@ -13,7 +13,8 @@
     <li>Polymorphism</li>
     <li>Type conversion</li>
     <li>Type conversion</li>
-    <li>File handling in C++</li>
+    <li>Template and Exception handling</li>
+    <li>File handling in c++</li>
 </ol>
  <h3>Compile and Run</h3>
     <p>Using g++ (GNU Compiler)</p>
